@@ -18,21 +18,17 @@ Future Improvements
 For future development, the dependency on a background Python or MATLAB script can be eliminated by using an Arduino Leonardo (or any board with native USB HID capability). By including the Keyboard.h library, the Arduino can be recognized directly as a keyboard by the computer. This would only require minor code modifications to replace Serial.print() commands with Keyboard.press() and Keyboard.release(), simplifying the setup and making the controller a true plug-and-play device.
 
 Hardware
--Arduino Uno (or compatible)
--8 x Microswitches (4 for manual play, 4 for the servo mechanism)
--4 x LDRs
--4 x Servo Motors (e.g., SG90)
--1 x Temperature Sensor (e.g., LM35)
--9 x LEDs
--Resistors (for LEDs and pull-downs if needed)
--Breadboard and Jumper Wires
+- Arduino Uno (or compatible)
+- 8 x Microswitches (4 for manual play, 4 for the servo mechanism)
+- 4 x LDRs
+- 4 x Servo Motors (e.g., SG90)
+- 1 x Temperature Sensor (e.g., LM35)
+- 9 x LEDs
+- Resistors (for LEDs and pull-downs if needed)
+- Breadboard and Jumper Wires
 
 How to Use
-
--Upload the .ino code to your Arduino Uno.
-
--Important: Once the code is uploaded, close the Arduino IDE's Serial Monitor (or any other program using that COM port). The Python script needs exclusive access to the serial port to work correctly.
-
--Run a Python script that reads the serial data (e.g., 'dD', 'fU') and uses a library like pynput or keyboard to simulate key presses.
-
--Start Osu! Mania! and play using your custom controller!
+ 1) Upload the .ino code to your Arduino Uno.
+ 2) Important: Once the code is uploaded, close the Arduino IDE's Serial Monitor (or any other program using that COM port). The Python script needs exclusive access to the serial port to work correctly.
+ 3) Run a Python script that reads the serial data (e.g., 'dD', 'fU') and uses a library like pynput or keyboard to simulate key presses.
+ 4) Start Osu! Mania! and play using your custom controller!

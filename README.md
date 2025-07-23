@@ -28,7 +28,11 @@ Hardware
 -Breadboard and Jumper Wires
 
 How to Use
+
 -Upload the .ino code to your Arduino Uno.
+
 -Important: Once the code is uploaded, close the Arduino IDE's Serial Monitor (or any other program using that COM port). The Python script needs exclusive access to the serial port to work correctly.
+
 -Run a Python script that reads the serial data (e.g., 'dD', 'fU') and uses a library like pynput or keyboard to simulate key presses.
+
 -Start Osu! Mania! and play using your custom controller!
